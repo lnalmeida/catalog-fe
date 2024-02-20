@@ -1,0 +1,84 @@
+.container {
+  display: flex;
+  padding: 1rem 5rem;
+  margin-left: 3rem;
+  flex-direction: column;
+}
+
+.top{
+  margin-top: -1.5rem;
+  margin-bottom: 1rem;
+  margin-left: 1.5rem;
+  display: flex;
+  align-items: flex-start;
+  padding: 0;
+
+}
+
+.product-card {
+  width: 20%;
+  margin: 10px;
+  transition: ease-in-out 0.2s;
+}
+
+.product-card:hover {
+  transform: scale(1.1);
+}
+
+header {
+  padding: 2rem;
+  margin: 2rem 0;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+.cards {
+  gap: 2rem;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  font-family: Roboto, sans-serif;
+  letter-spacing: .0178571429em;
+  color: rgba(0,0,0,.87);
+  margin-top: 1rem;
+  margin-left: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.mat-mdc-card-header {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  font-family: Roboto, sans-serif;
+  letter-spacing: .0178571429em;
+  color: rgba(0,0,0,.87);
+  --mdc-elevated-card-container-color: #fff;
+  display: flex;
+  padding: 8px 16px 0;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+ button {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1.5rem 1rem 1.5rem 1rem;
+  margin: 0.5rem 0 1rem 0.5rem;
+  background-color: rgb(216, 216, 250);
+}
+
+mat-card-actions {
+  bottom: 0;
+}
+
+.product-card img {
+  width: 295px;
+  height: 198px;
+  object-fit: scale-down;
+}

@@ -1,0 +1,38 @@
+.header, .content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+
+.header h2 {
+  margin-bottom: 0;
+  background-color: red;
+  color: white;
+  width: 100%;
+  text-align: center;
+}
+
+.content {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+mat-dialog-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 1.5rem;
+}
+
+.custom-dialog-actions button:nth-child(1) {
+  color: white;
+  background-color: rgb(231, 75, 75);
+}
+
+/* Estilo específico para o botão Confirmar */
+.custom-dialog-actions button:nth-child(2) {
+  color: white;
+  background-color: rgb(100, 100, 224);
+}

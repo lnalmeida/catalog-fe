@@ -1,0 +1,45 @@
+.thumbs{
+  width: 24px;
+  height: 24px;
+}
+.mat-header-row{
+  margin-top: 7.5rem;;
+}
+
+.mat-card-sm-image{
+  width: 64px;
+      height: 64px;
+      object-fit: cover;
+}
+
+.mat-mdc-table {
+  margin-top: 7rem;
+  padding: 0 2rem 0.5rem 2rem;
+}
+
+.mat-mdc-table td {
+  padding-top: 0.5rem;
+}
+
+.container {
+  margin-top: 3rem;
+}
+
+.container.top {
+  margin-top: -4rem;
+  position: fixed;
+}
+
+.container button {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1.5rem 1rem 1.5rem 1rem;
+  margin: 0.5rem 0 1rem 0.5rem;
+  background-color: rgb(216, 216, 250);
+}
+
+.container mat-icon{
+  font-size: 1.3rem;
+}

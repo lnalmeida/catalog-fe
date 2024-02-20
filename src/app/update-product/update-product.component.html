@@ -1,0 +1,50 @@
+<div>
+  <h2 class="title" >Update Product</h2>
+</div>
+
+<form  [formGroup]="productForm" (ngSubmit)="updateProduct()">
+
+  <div class="controls-container">
+
+    <div class="inputs">
+      <mat-form-field appearance="fill">
+        <select formControlName="productCategoryId">
+          <option *ngFor="let category of categoriesDS" [value]="category.categoryId">
+            {{ category.categoryName }}
+          </option>
+        </select>
+      </mat-form-field>
+
+
+      <mat-form-field class="hidden">
+        <input matInput   [value]="categoriesDS[0].categoryId" />
+      </mat-form-field>
+
+      <mat-form-field>
+        <input matInput name="productName" placeholder="Name of product" formControlName="productName" />
+      </mat-form-field>
+      <mat-form-field>
+        <textarea matInput name="productDescription" formControlName="productDescription" required placeholder="Description of product"></textarea>
+      </mat-form-field>
+      <mat-form-field>
+        <textarea matInput name="productImageUrl" formControlName="productImageUrl" required (blur)="loadImage()" placeholder="Product Image Url"></textarea>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput id="price" name="productPrice" placeholder="Price of product" formControlName="productPrice" currencyMask>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput id="stock" name="productStock" placeholder="Quantity in Stock" formControlName="productStock" />
+      </mat-form-field>
+    </div>
+    <div class="product-image">
+      <img [src]="productImage" alt="Product image">
+    </div>
+  </div>
+  <br/>
+  <br/>
+  <div class="add-products-actions">
+    <button type="submit" [disabled]="!productForm.valid" mat-button color="primary" >Save</button>
+    <button type="button" mat-button color="secondary" (click)="cancelUpdateProduct()" >Cancel</button>
+  </div>
+</form>
+

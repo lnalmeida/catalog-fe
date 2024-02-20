@@ -1,0 +1,20 @@
+<div>
+  <h2 class="title" >Update a Category</h2>
+</div>
+<form class="example-container" [formGroup]="categoryForm" (ngSubmit)="updateCategory()">
+  <mat-form-field>
+    <strong><p>Id: {{dataSource.categoryId}}</p></strong>
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput name="categoryName" placeholder="Name" formControlName="categoryName" />
+  </mat-form-field>
+  <mat-form-field>
+    <textarea matInput name="categoryImageUrl" formControlName="categoryImageUrl" required placeholder="Image Url" ></textarea>
+  </mat-form-field>
+  <br/>
+  <br/>
+  <div class="actions">
+    <button type="submit" [disabled]="!categoryForm.valid" mat-button color="primary" >Save</button>
+    <button type="button" mat-button color="danger" (click)="cancelUpdateCategory()" >Cancel</button>
+  </div>
+</form>

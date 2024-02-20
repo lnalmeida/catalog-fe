@@ -1,0 +1,48 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15rem;
+}
+.category-card {
+  max-width: 900px;
+}
+
+.details-container {
+  display: flex;
+}
+
+.details-info {
+  flex: 1;
+  padding: 1rem;
+}
+
+.details-image {
+  flex: 1;
+  padding: 1rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.details-info > button {
+  width: 4rem;
+  height: 2rem;
+  text-align: center;
+  border-radius: 4px;
+  background-color: blue($color: #5d4ad8);
+}
+
+.actions {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.action button {
+  padding: 1rem;
+  border-radius: 4px;
+  border: none;
+}

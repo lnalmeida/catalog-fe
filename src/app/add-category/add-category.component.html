@@ -1,0 +1,18 @@
+<div>
+  <h2 class="title" >Add a new Category</h2>
+</div>
+<form class="example-container" [formGroup]="categoryForm" (ngSubmit)="addCategory()">
+  <mat-form-field>
+    <input matInput name="categoryName" placeholder="Name" formControlName="categoryName" />
+  </mat-form-field>
+  <mat-form-field>
+    <!-- <input type="text" matInput name="categoryImage" placeholder="Image Url" formControlName="categoryImage" /> -->
+    <textarea matInput name="categoryImageUrl" formControlName="categoryImageUrl" required placeholder="Image Url"></textarea>
+  </mat-form-field>
+  <br/>
+  <br/>
+  <div class="add-products-actions">
+    <button type="submit" [disabled]="!categoryForm.valid" mat-button color="primary" >Save</button>
+    <button type="button" mat-button color="secondary" (click)="cancelAddCategory()" >Cancel</button>
+  </div>
+</form>

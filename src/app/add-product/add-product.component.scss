@@ -1,0 +1,84 @@
+.title {
+  margin-top: 5.5rem;
+  margin-left: 1rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.mat-sidenav-content {
+  height: 100%;
+  overflow-y: hidden;
+}
+
+input, textarea {
+  margin-top: 0;
+  padding: 8px 5px 8px 5px;
+  border-radius: 5px;
+}
+
+button {
+  width: 10%;
+  padding: 16px;;
+  margin-left: 1rem;
+  background-color: rgb(217, 217, 250);
+}
+
+.add-products-actions {
+  display: flex;
+  width: 10%;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.controls-container {
+  display: flex;
+  gap: 2rem;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.product-image {
+  margin-top: 2rem;
+  width: 25rem;
+  height: 27rem;
+  align-items: center;
+  justify-content: center;
+}
+
+img {
+  width: 100%;
+}
+
+select {
+  width: 30%;
+  height: 2.2rem;
+  border-radius: 4px;
+}
+
+textarea {
+  width: 40%;
+  height: 4rem;
+}
+
+.inputs input:nth-child(1) {
+  width: 50%;
+}
+
+input {
+  width: 10%;
+}
+
+.hidden {
+  display: none;
+}
+
+#price, #stock {
+  width: 15%;
+}

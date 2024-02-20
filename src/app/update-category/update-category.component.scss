@@ -1,0 +1,39 @@
+.title {
+  margin-top: 5.5rem;
+  margin-left: 1rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.mat-sidenav-content {
+  height: 100%;
+  overflow-y: hidden;
+}
+
+input, textarea {
+  margin-top: 0;
+  padding: 8px 5px 8px 5px;
+  border-radius: 5px;
+}
+
+textarea {
+  width: 20rem;
+  height: 3rem;
+}
+
+button {
+  width: 10%;
+  padding: 16px;;
+  margin-left: 1rem;
+  background-color: rgb(217, 217, 250);
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1.5rem;
+}

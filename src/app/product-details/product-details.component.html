@@ -1,0 +1,27 @@
+<div class="container">
+  <mat-card class="category-card">
+    <mat-card-header>
+      <mat-card-title>Details</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <div class="details-container">
+        <div class="details-info">
+          <p><strong>ID:</strong> {{ datasource.productId }}</p>
+          <p><strong>Name:</strong> {{ datasource.name }}</p>
+          <p><strong>Name:</strong> {{ datasource.description }}</p>
+          <p><strong>Name:</strong> {{ datasource.price | currency:'BRL' }}</p>
+          <p><strong>Image Url:</strong> {{ datasource.imageUrl }}</p>
+          <div class="actions">
+            <button  [routerLink]="'/products'" [routerLinkActive]="'active'">Back</button>
+            <button  [routerLink]="'/products/update/' + datasource.productId" [routerLinkActive]="'active'" [disabled]="!userRole || userRole !== 'admin'">Edit</button>
+            <button (click)="openConfirmationDialog(datasource.productId)"  [disabled]="!userRole || userRole !== 'admin'">Delete</button>
+          </div>
+        </div>
+        <div class="details-image">
+          <img [src]="datasource.imageUrl" alt="Product Image">
+        </div>
+      </div>
+    </mat-card-content>
+  </mat-card>
+
+</div>

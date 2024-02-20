@@ -1,0 +1,22 @@
+<div class="container">
+  <mat-card class="category-card">
+    <mat-card-header>
+      <mat-card-title>Details</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <div class="details-container">
+        <div class="details-info">
+          <p><strong>ID:</strong> {{ datasource.categoryId }}</p>
+          <p><strong>Name:</strong> {{ datasource.categoryName }}</p>
+          <p><strong>Image Url:</strong> {{ datasource.categoryImageUrl }}</p>
+
+          <button  routerLink="/categories" routerLinkActive="active">Back</button>
+        </div>
+        <div class="details-image">
+          <img [src]="datasource.categoryImageUrl" alt="Category Image">
+        </div>
+      </div>
+    </mat-card-content>
+  </mat-card>
+
+</div>
